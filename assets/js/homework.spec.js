@@ -61,3 +61,55 @@ describe("Тестуємо функцію ageClassification()", () => {
   });
 
 });
+
+describe("Тестуємо функцію weekFn()", () => {
+
+  it("weekFn(1) поверне: Понедельник", function () {
+    expect(weekFn(1)).toBe("Понедельник");
+  });
+
+  it("weekFn(2) поверне: Вторник", function () {
+    expect(weekFn(2)).toBe("Вторник");
+  });
+
+  it("weekFn(3) поверне: Среда", function () {
+    expect(weekFn(3)).toBe("Среда");
+  });
+
+  it("weekFn(4) поверне: Четверг", function () {
+    expect(weekFn(4)).toBe("Четверг");
+  });
+
+  it("weekFn(5) поверне: Пятница", function () {
+    expect(weekFn(5)).toBe("Пятница");
+  });
+
+  it("weekFn(6) поверне: Суббота", function () {
+    expect(weekFn(6)).toBe("Суббота");
+  });
+
+  it("weekFn(7) поверне: Воскресенье", function () {
+    expect(weekFn(7)).toBe("Воскресенье");
+  });
+
+  it("weekFn(9) поверне: null", function () {
+    expect(weekFn(9)).toBe(null);
+  });
+
+  it("weekFn(1.5) поверне: null", function () {
+    expect(weekFn(1.5)).toBe(null);
+  });
+
+  it("weekFn(\"2\") поверне: null", function () {
+    expect(weekFn("2")).toBe(null);
+  });
+
+  it("weekFn(0) поверне: null", function () {
+    expect(weekFn(0)).toBe(null);
+  });
+
+  it("weekFn(-1) поверне: null", function () {
+    expect(weekFn(-1)).toBe(null);
+  });
+
+});

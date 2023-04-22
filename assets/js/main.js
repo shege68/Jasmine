@@ -11,3 +11,21 @@ function ageClassification(n) {
               : n < 0 || n >= 122 ? null : undefined;
   return age;
 }
+
+function weekFn(n) {
+  var days = '';
+  switch (n) {
+    case 1: days = 'Понедельник'; break;
+    case 2: days = 'Вторник'; break;
+    case 3: days = 'Среда'; break;
+    case 4: days = 'Четверг'; break;
+    case 5: days = 'Пятница'; break;
+    case 6: days = 'Суббота'; break;
+    case 7: days = 'Воскресенье'; break;
+    default: days = null;
+  }
+  return days;
+}
+
+
+
